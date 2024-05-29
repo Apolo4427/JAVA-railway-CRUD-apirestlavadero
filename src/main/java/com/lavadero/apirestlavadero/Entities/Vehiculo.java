@@ -33,21 +33,9 @@ public class Vehiculo {
     private int numero_lavadas;
     private String descripcion; 
 
-    // public Vehiculo(Long id, String nombre){
-    //     this.nombre=nombre;
-    // }
-
-    //constructor
-    // public Vehiculo(String placa, int lavadas){
-    //     this.placa = placa;
-    //     this.numero_lavadas = lavadas;
-    // }
-
     public Vehiculo(){
 
     }
-
-    
 
     public Vehiculo(
             @NotBlank(message = "Por favor ingrese una placa, no registrada anteriormente") @Length(min = 7, message = "la placa debe tener min 7 caracteres, ejemplo: XXX-123, recuerda incluir el gion('-')") String placa,
@@ -60,49 +48,5 @@ public class Vehiculo {
         this.numero_lavadas = numero_lavadas;
         this.descripcion = descripcion;
     }
-
-
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
-    public String getNombre() {
-        return nombre;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public int getNumero_lavadas() {
-        return numero_lavadas;
-    }
-    public void setNumero_lavadas(int numero_lavadas) {
-        this.numero_lavadas = numero_lavadas;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-    
-    // public Long getId() {
-    //     return id;
-    // }
-    // public void setId(Long id) {
-    //     this.id = id;
-    // }
 
 }

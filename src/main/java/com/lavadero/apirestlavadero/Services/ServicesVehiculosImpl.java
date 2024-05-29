@@ -101,8 +101,6 @@ public class ServicesVehiculosImpl implements ServicesVehiculos{
     @Override
     public Vehiculo findVehiculoByPlaca(String placa) throws VehiculoNoFundException{
         return vehiculosRepository.findVehiculoByPlaca(placa).get();
-    }
-
-    
+    }   
 
 }
